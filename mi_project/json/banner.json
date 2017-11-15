@@ -1,0 +1,279 @@
+{
+	"classify001":{
+		"name" : "手机",
+		"list" : [
+			{
+				"id" : "shop01",
+				"name" : "小米Note3",
+				"src" : "xmNOTE2-80.jpg",
+				"price" : "2399"
+			},
+			{
+				"id" : "shop02",
+				"name" : "小米MIX2",
+				"src" : "xm6_80.png",
+				"price" : "3999"
+			},
+			{
+				"id" : "shop03",
+				"name" : "xm5S-plus-80.jpg",
+				"src" : "80xmds_55.jpg",
+				"price" : "1231"
+			},
+			{
+				"id" : "shop04",
+				"name" : "小米6",
+				"src" : "xm5S-80.jpg",
+				"price" : "1325"
+			},
+			{
+				"id" : "shop05",
+				"name" : "小米5",
+				"src" : "note3-80-2.png",
+				"price" : "5469"
+			},
+			{
+				"id" : "shop06",
+				"name" : "小米5X",
+				"src" : "mix2-80.png",
+				"price" : "4568"
+			},
+			{
+				"id" : "shop07",
+				"name" : "小米Max2",
+				"src" : "max2_80.jpg",
+				"price" : "4568"
+			},
+			{
+				"id" : "shop08",
+				"name" : "小米Max1",
+				"src" : "hmn4x80.png",
+				"price" : "1254"
+			},
+			{
+				"id" : "shop09",
+				"name" : "小米手机5c",
+				"src" : "hm4x_80.png",
+				"price" : "785"
+			},
+			{
+				"id" : "shop10",
+				"name" : "小米Note1",
+				"src" : "hm4-80.jpg",
+				"price" : "856"
+			},
+			{
+				"id" : "shop11",
+				"name" : "小米5s",
+				"src" : "compare.jpg",
+				"price" : "856"
+			},
+			{
+				"id" : "shop12",
+				"name" : "小米5sPlus",
+				"src" : "bijiben80.jpg",
+				"price" : "856"
+			},
+			{
+				"id" : "shop13",
+				"name" : "红米4",
+				"src" : "20170707135935.jpg",
+				"price" : "856"
+			},
+			{
+				"id" : "shop14",
+				"name" : "红米4x",
+				"src" : "80xmds_55.jpg",
+				"price" : "856"
+			},
+			{
+				"id" : "shop15",
+				"name" : "红米4",
+				"src" : "6580side.jpg",
+				"price" : "856"
+			},
+			{
+				"id" : "shop16",
+				"name" : "红米Note5a",
+				"src" : "805a.png",
+				"price" : "856"
+			},
+			{
+				"id" : "shop17",
+				"name" : "红米Note5x",
+				"src" : "80xmds_65.jpg",
+				"price" : "856"
+			},
+			{
+				"id" : "shop18",
+				"name" : "红米Note4x",
+				"src" : "80xmds_55.jpg",
+				"price" : "856"
+			},
+			{
+				"id" : "shop19",
+				"name" : "笔记本AIR 12.5",
+				"src" : "80xmds_49.jpg",
+				"price" : "456"
+			}
+		]
+	},
+	"classify002":{
+		"name" : "笔记本",
+		"list" : [
+			{
+				"id" : "shop20",
+				"name" : "笔记本AIR 13.3 独显",
+				"src" : "80pc-5x.png",
+				"price" : "962"
+			},
+			{
+				"id" : "shop21",
+				"name" : "笔记本AIR 13.3 集显",
+				"src" : "80-5a.png",
+				"price" : "856"
+			},
+			{
+				"id" : "shop22",
+				"name" : "笔记本pro 15.6 独显",
+				"src" : "5c_80.png",
+				"price" : "459"
+			},
+			{
+				"id" : "shop23",
+				"name" : "适配器",
+				"src" : "5Battery1.jpg",
+				"price" : "5682"
+			},
+			{
+				"id" : "shop24",
+				"name" : "电源线",
+				"src" : "4A43.jpg",
+				"price" : "8652"
+			},
+			{
+				"id" : "shop25",
+				"name" : "便携鼠标",
+				"src" : "3-80.jpg",
+				"price" : "4582"
+			},
+			{
+				"id" : "shop26",
+				"name" : "Display转接器",
+				"src" : "bijiben80 (1).jpg",
+				"price" : "4521"
+			},
+			{
+				"id" : "shop27",
+				"name" : "机械键盘",
+				"src" : "shouhuan280.jpg",
+				"price" : "2365"
+			},
+			{
+				"id" : "shop28",
+				"name" : "内胆包",
+				"src" : "toudai80.jpg",
+				"price" : "1258"
+			},
+			{
+				"id" : "shop29",
+				"name" : "网线转换器",
+				"src" : "tdsqs80.jpg",
+				"price" : "1258"
+			},
+			{
+				"id" : "shop30",
+				"name" : "鼠标垫",
+				"src" : "xiaobai80.jpg",
+				"price" : "1258"
+			},
+			{
+				"id" : "shop31",
+				"name" : "无线鼠标",
+				"src" : "xin43.png",
+				"price" : "1258"
+			},
+			{
+				"id" : "shop32",
+				"name" : "Display转接器",
+				"src" : "bijiben80 (1).jpg",
+				"price" : "4521"
+			}
+		]
+	},
+	"classify003":{
+		"name" : "小米明星单品",
+		"list" : [
+			{
+				"id" : "shop33",
+				"name" : "红米Note 4X 浅蓝色",
+				"desc" : "5.5金属机身，4100mAh 超长续航",
+				"src" : "xmad_15027986766869_deJyE.png",
+				"price" : "999"
+			},
+			{
+				"id" : "shop34",
+				"name" : "红米Note 4X",
+				"desc" : "4100mAh超长续航，多彩金属",
+				"src" : "xmad_1489401341687_vUojl.png",
+				"price" : "999"
+			},
+			{
+				"id" : "shop35",
+				"name" : "红米4X",
+				"desc" : "4100mAh超长续航，8 核处理器",
+				"src" : "xmad_14966625747867_qcTyh.png",
+				"price" : "699"
+			},
+			{
+				"id" : "shop36",
+				"name" : "小米电视4A 43英寸 标准版",
+				"desc" : "全高清HDR 四核高性能处理器",
+				"src" : "pms_1503909150.67293503!220x220.png",
+				"price" : "1999"
+			},
+			{
+				"id" : "shop37",
+				"name" : "小米笔记本",
+				"desc" : "更轻更薄，像杂志一样随身携带",
+				"src" : "725a37e3-78b7-4298-8098-c40097bf179d.png",
+				"price" : "3999"
+			},
+			{
+				"id" : "shop38",
+				"name" : "米家智能摄像机云台版",
+				"desc" : "红外夜视，720P分辨率",
+				"src" : "xmad_15078617619273_gRwzn.png",
+				"price" : "199"
+			},
+			{
+				"id" : "shop39",
+				"name" : "小米手环2",
+				"desc" : "OLED 显示屏幕，升级计步算法",
+				"src" : "6ef55907-bbed-49be-a2bb-be0821b5f7b8.png",
+				"price" : "149"
+			},
+			{
+				"id" : "shop40",
+				"name" : "米家压力IH电饭煲",
+				"desc" : "智能烹饪，压力IH加热技术",
+				"src" : "T1ZYC_BjWv1RXrhCrK.jpg",
+				"price" : "999"
+			},
+			{
+				"id" : "shop41",
+				"name" : "米家空气净化器Pro包",
+				"desc" : "OLED显示屏幕，激光颗粒物传感器",
+				"src" : "xmad_14972549116226_tZpod.png",
+				"price" : "1499"
+			},
+			{
+				"id" : "shop42",
+				"name" : "小米路由器3",
+				"desc" : "更快更强，不止四天线",
+				"src" : "de35852a-1be5-4ef5-846f-dcdd2efcfea6.png",
+				"price" : "149"
+			}
+		]
+	}
+}
