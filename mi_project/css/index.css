@@ -19,13 +19,22 @@
 .topbar-info a{padding:0 8px;}
 /*header*/
 #header{width:100%;height:100px;background:#fff;}
-.header-con{height:100px;}
+.header-con{height:100px;position:relative;}
 .logo{height:78px;width:55px;float:left;padding-top:22px;}
 .logo a{display:block;height:55px;height:55px;background:url(../img/index/logo.jpg) no-repeat center;}
 .header-nav{float:left;margin-left:90px;height:100px;}
-.header-nav li{float:left;height:100px;line-height:100px;cursor:pointer;}
-.header-nav li a{margin-right:20px;color:#333;font-size:16px;}
-.header-nav li a:hover{color:#ff6700;}
+.header-nav>li{float:left;height:100px;line-height:100px;cursor:pointer;}
+.header-nav>li>a{margin-right:20px;color:#333;font-size:16px;}
+.header-nav>li>a:hover{color:#ff6700;}
+.header-nav>li .item-children{position:absolute;width:1226px;top:100px;left:0px;border-top:1px solid #ccc;z-index:1000;background:#fff;height:auto;}
+.header-nav>li .item-lists{padding:0 0 0 40px;}
+.header-nav>li .item-lists li{font-size:16px;float:left;text-align:center;padding-bottom:30px;}
+.header-nav>li .item-lists li .item-lists-img{display:block;height:110px;border-left:1px solid #ccc;margin-top:30px;}
+.header-nav>li .item-lists .first .item-lists-img{border-left:0;}
+.header-nav>li .item-lists li .item-lists-img img{width:160px;height:110px;}
+.header-nav>li .item-lists li .title{font-size:12px;margin:20px 0 10px;line-height:12px;}
+.header-nav>li .item-lists li .title a{color:#333;}
+.header-nav>li .item-lists li .price{font-size:12px;line-height:12px;color:#FF6700;}
 .header-search{float:right;height:75px;width:297px;padding-top:25px;position:relative;}
 .header-search .txt{float:left;height:50px;width:245px;border:1px solid #e0e0e0;}
 .header-search .btn{float:left;height:50px;width:51px;border:1px solid #e0e0e0;border-left:0;background:#fff;}
@@ -146,6 +155,7 @@
 .content-item-1{margin-left:0;}
 .content-item .title{margin:0 10px 18px;font-size:16px;color:#ffac13;text-align:center;}
 .item-con{width:296px;height:340px;overflow:hidden;}
+.item-list{width:1184px;}
 .item-list li{float:left;width:296px;height:340px;}
 .item-list li .name{margin: 0 20px 5px;font-size: 20px;font-weight: 400;line-height: 1.25;text-align:center;}
 .item-list li .name a{color:#333;}
@@ -155,7 +165,7 @@
 .item-list li .price a{color:#333;font-size:14px;}
 .item-list-img{display:block;width:216px;height:154px;margin:0 auto;}
 .item-list-img img{width:216px;height:154px;}
-.item-pager{position:absolute;bottom:25px;left:100px;}
+.item-pager{position:absolute;bottom:25px;left:85px;}
 .item-pager li{float:left;height:6px;width:6px;border:2px solid #fff;background:#b0b0b0;border-radius:6px;margin:0 10px;cursor:pointer;}
 .item-pager li.pager-active{border:2px solid #FF6700;background:#fff;}
 
