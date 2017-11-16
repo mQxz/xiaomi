@@ -59,7 +59,7 @@ requirejs(["jquery","pb"],function($,pb){
 	
 	
 	//banner 列表ajax请求数据
-	$(".tabctrl>li").mouseover(function(){
+	$(".tabctrl>li").mouseenter(function(){
 		pb.ajax( "http://127.0.0.1/xiaomi/mi_project/json/banner.json?hh="+Math.random(),function(json){
 			var str = "<ul class='tab-children-ul'>";
 			var ulNum = Math.ceil(json[$(this).data("type")].list.length/6);
@@ -73,11 +73,14 @@ requirejs(["jquery","pb"],function($,pb){
 					str += "</ul>";
 				}
 	    	}
-	    	$(".tab-children").html( str );
+	    	$(this).find(".tab-children").html( str );
+	    	$(this).find(".tab-children").css({"width":246*ulNum});
 	    }.bind(this))
-		$(".tab-children").css("display","block");
-	}).mouseout(function(){
-		$(".tab-children").css("display","none");
+		$(this).find(".tab-children").css({"display":"block"});
+	}).mouseleave(function(){
+		$(this).find(".tab-children").css({"display":"none"},function(){
+			$(this).css("width",0);
+		});
 	})
 	
 	//小米明星单品数据请求  运动
@@ -99,11 +102,11 @@ requirejs(["jquery","pb"],function($,pb){
     function starPlay(){
     	if(starFlag){
     		$(".starpro-radio").animate({"margin-left":-1240},1000);
-    		$(".stari1").css({"color":"#757575","cursor":"pointer"}).siblings().css({"color":"#cccccc","cursor":""});
+    		$(".starproduct-con .stari1").css({"color":"#757575","cursor":"pointer"}).siblings().css({"color":"#cccccc","cursor":""});
     		starFlag = false;
     	}else{
     		$(".starpro-radio").animate({"margin-left":0},1000);
-    		$(".stari1").css({"color":"#cccccc","cursor":""}).siblings().css({"color":"#757575","cursor":"pointer"});
+    		$(".starproduct-con .stari1").css({"color":"#cccccc","cursor":""}).siblings().css({"color":"#757575","cursor":"pointer"});
     		starFlag = true;
     	}
     }
@@ -136,7 +139,6 @@ requirejs(["jquery","pb"],function($,pb){
     	floorShow($(this));
     })
     
-    
     function floorShow(obj){
     	obj.addClass("tab-active").siblings().removeClass("tab-active");
     	pb.ajax( "http://127.0.0.1/xiaomi/mi_project/json/floors.json?hh="+Math.random(),function(json){
@@ -144,7 +146,7 @@ requirejs(["jquery","pb"],function($,pb){
 	    	for( var i = 0 ; i < json[obj.data("type")].list.length ; i++ ){
 	    		var product = json[obj.data("type")].list[i];
 				if(i == 7){
-					str += `<li class="brick brick-s">
+					str += `<li class="brick brick-s shadow">
 								<a class="brick-s-img" href="javascript:;">
 									<img src="img/index/floorsele/${json[obj.data("type")].name}/${product.src}" alt="" />
 								</a>
@@ -152,7 +154,7 @@ requirejs(["jquery","pb"],function($,pb){
 								<p class="price">${product.price}元</p>
 							</li>`;
 	    		}else{
-					str += `<li class="brick">
+					str += `<li class="brick shadow">
 								<a class="floor-con-img" href="javascript:;"><img src="img/index/floorsele/${json[obj.data("type")].name}/${product.src}" alt=""/></a>
 								<h3 class="floor-con-title"><a href="javascript:;">${product.name}</a></h3>
 								<p class="desc">${product.desc}</p>
@@ -163,7 +165,7 @@ requirejs(["jquery","pb"],function($,pb){
 							</li>`;
 				}
 			}
-	    	str += `<li class="brick brick-s">
+	    	str += `<li class="brick brick-s shadow">
 						<a class="brick-s-icon" href="javascript:;">
 							<i class="iconfont icon-yijiuhuanxin"></i>
 						</a>
@@ -172,6 +174,13 @@ requirejs(["jquery","pb"],function($,pb){
 	    	obj.parent().parent().parent().find(".floor-con-2").html(str);
 	   }.bind(this));
     }
+    //楼层内元素鼠标划入划出评论出现和隐藏
+    $(".floor-con-2").on("mouseenter","li",function(){
+    	$(this).find(".rank").stop().animate({"top":250},200);
+    }).on("mouseleave","li",function(){
+    	$(this).find(".rank").stop().animate({"top":300},200);
+    })
+    
     
     
     //headernav 子元素隐藏显示
@@ -182,5 +191,27 @@ requirejs(["jquery","pb"],function($,pb){
     })
     
     
+    //内容区内容点击轮播
+    $(".item-pager>li").click(function(){
+    	$(this).addClass("pager-active").siblings().removeClass("pager-active");
+    	$(this).parent().siblings().find(".item-list").animate({"margin-left":-$(this).index()*296},500);
+    })
+    
+    //为你推荐区
+    $(".recommend .stari1").click(function(){
+    	$(".recommend-ul").animate({"margin-left":0},1000);
+    })
+    $(".recommend .stari2").click(function(){
+    	$(".recommend-ul").animate({"margin-left":-1240},1000);
+    })
+    
+    //盒子划过阴影
+    $(document).on("mouseenter",".shadow",function(){
+    	$(this).stop().css({"box-shadow":"0 10px 10px 5px #ccc"}).animate({"margin-top":0},500);
+    }).on("mouseleave",".shadow",function(){
+    	$(this).stop().animate({"margin-top":0},500,function(){
+    		$(this).css({"box-shadow":""});
+    	})
+    })
     
 })
