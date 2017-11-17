@@ -213,5 +213,19 @@ requirejs(["jquery","pb"],function($,pb){
     		$(this).css({"box-shadow":""});
     	})
     })
-    
+    //用户名显示
+	var hrefstr = location.href;
+	var str = hrefstr.split("?")[1].split("&")[0].split("=")[0];
+	var userid = hrefstr.split("?")[1].split("&")[0].split("=")[1]
+	if( str == "userId" ){
+		$(".name").html( userid );
+		$(".login-res").css("display","none");
+		$(".link-order").css("display","inline-block");
+		$(".user").css("display","inline-block");
+	}
+	$(".user").mouseenter(function(){
+		$(this).find(".sep").css("display","none").end().find(".user-menu").css("display","block");
+	}).mouseleave(function(){
+		$(this).find(".sep").css("display","inline").end().find(".user-menu").css("display","none");
+	})
 })

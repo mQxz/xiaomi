@@ -7,13 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont/iconfont.css"/>
 	</head>
-	<!--<style type="text/css">
-		.tab-children-ul{float:left;width:256px;height:459px;}
-		.tab-children-ul li{width:256px;height:76px;}
-		.tab-children-ul li a{display:block;padding:17px 20px;line-height:40px;color:#333;position:relative;}
-		.tab-children-ul li a img{margin-right:12px;vertical-align:middle;width:40px;height:40px;display:inline-block;}
-		.tab-children-ul li a span{line-height:40px;}
-	</style>-->
 	<body>
 		<!--top导航-->
 		<div id="topbar">
@@ -43,10 +36,31 @@
 					</div>
 				</div>
 				<div class="topbar-info" id="userInfo">
-					<a rel="nofollow" class="link" href="" data-needlogin="true">登录</a><span class="sep">|</span>
-					<a rel="nofollow" class="link" href="">注册</a><span class="sep">|</span>
+					<span class="login-res" style="display:inline-block">
+						<a rel="nofollow" class="link" href="" data-needlogin="true">登录</a><span class="sep">|</span>
+						<a rel="nofollow" class="link" href="">注册</a><span class="sep">|</span>
+					</span>
+					
+					<span class="user" style="display: none;">
+						<a href="javascript:;">
+							<span class="name">13552418897</span>
+							<i class="iconfont icon-xiangxiajiantou"></i>
+						</a>
+						<span class="sep">|</span>
+						<ul class="user-menu" style="display: none;">
+							<li><a href="javascript:;">个人中心</a></li>
+							<li><a href="javascript:;">评价晒单</a></li>
+							<li><a href="javascript:;">我的喜欢</a></li>
+							<li><a href="javascript:;">小米账户</a></li>
+							<li><a href="javascript:;">退出登录</a></li>
+						</ul>
+					</span>
 					<span class="message">
 						<a rel="nofollow" href="https://order.mi.com/message/list">消息通知<i class="J_miMessageTotal"></i></a>
+					</span>
+					<span class="link link-order" style="display: none;">
+						<span class="sep">|</span>
+						<a href="javascript:;" >我的订单</a>
 					</span>
 				</div>
 			</div>

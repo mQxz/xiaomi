@@ -1,6 +1,6 @@
 /* 网站中相同样式 */
 @charset "utf-8";
-html,body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,ol,p,select,td,textarea,th,ul,li,a{margin:0;padding:0;}
+html,body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,ol,p,select,td,textarea,th,ul,li,a,em{margin:0;padding:0;}
 h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:100;}
 body{font-family:"微软雅黑";}
 ul,ol,li{list-style:none;}

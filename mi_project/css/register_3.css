@@ -1,0 +1,39 @@
+html,body{height:100%;}
+#container{width:100%;height:100%;background:#f9f9f9;}
+#wrapper{padding-top:34px;}
+#main{width:922px;height:520px;margin:0 auto;background:#fff;}
+#register-box{width:332px;margin:0 auto;}
+.h-logo{width:49px;height:48px;margin:0 auto 40px;}
+.reg-title{font-size:30px;text-align:center;color:#666;line-height:45px;margin-bottom:30px;}
+.username{
+	font-size:14px;
+	color:#757575;
+	font-weight: 900;
+	text-align: center;
+	width:332px;
+	height:14px;
+	line-height: 14px;
+	margin:70px 0 100px 0;
+}
+.miId{
+	color:#FF6700;
+}
+
+
+
+#register-box .btn_reg_1{
+	outline: none;
+	width:332px;
+	height:42px;
+	color:#fff;
+	background:#FF6700;
+	border:0;
+}
+.btn_reg_1:hover{opacity:0.6;}
+
+#footer{width:100%;padding-top:45px;}
+.footer-link{text-align:center;font-size:14px;color:#75757;}
+.footer-link a{color:#333;padding:0 10px;color:#75757;}
+.footer-info{text-align:center;padding:10px;font-size:14px;color:#757575;}
+.footer-info a{color:#757575;}
+.footer-info a img{display:inline-block;}
