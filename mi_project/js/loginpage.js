@@ -24,8 +24,9 @@ requirejs(["jquery","pb"],function($,pb){
 		var username = $("#username").val();
 		var password = $("#pwd").val();
 		var data = JSON.parse(pb.getCookie("userlist"));
+		var loginHref = "http://127.0.0.1/xiaomi/mi_project/index.html?userId=123456789";
 		if( (username == data["userphone"] || username == data["userid"]) && password == data["userpwd"]){
-			$(this).attr("action","index.html?userid="+data.userid);
+			$(this).attr("action","http://127.0.0.1/xiaomi/mi_project/index.html?userId=123456789");
 			return true;
 		}else{
 			$(".error-info").html( "用户名或密码错误" );
