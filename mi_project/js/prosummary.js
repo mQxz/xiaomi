@@ -35,8 +35,78 @@ requirejs(["jquery","pb"],function($,pb){
     	$(this).find(".item-children").css("display","none");
     })
 	
+	//ui-wrapper图片转换
+	var uiIndex = 0;
+	var uiTimer = setInterval( uiPlay , 5000 );
+	function uiPlay(){
+		uiIndex++;
+		if( uiIndex == 2 ){
+			uiIndex = 0;
+		}
+		setTimeout(function(){
+			$("#J_headerTitle").find(".phantom-item-3").find(".text").css({"background":"url(img/prosummary/index-header-title2-0"+ (uiIndex+1) +".png) no-repeat center","background-size":"100%"});
+			if( uiIndex == 0 ){
+				$("#J_headerTitle").css("color","#fff");
+			}else{
+				$("#J_headerTitle").css("color","#000");
+			}
+		},1000);
+		$(".ui-viewport>li").eq(uiIndex).animate({"opacity":1},2000).siblings().animate({"opacity":0},2000);
+	}
+	$(".ui-pager>a").click(function(){
+		$(this).css("background","rgb(176, 176, 176)").siblings().css("background","rgb(255, 255, 255)");
+		uiIndex = $(this).index()-1;
+		uiPlay();
+	})
+	$(".ui-pager>a").mouseover(function(){
+		clearInterval(uiTimer);
+		$(this).css("background","rgb(176, 176, 176)");
+	}).mouseout(function(){
+		uiTimer = setInterval( uiPlay , 5000 );
+		$(this).css("background","rgb(255, 255, 255)");
+	})
 	
+	//section-gallery 轮播
+	var galleryIndex = 0;
+	var galleryTimer = setInterval(galleryPlay,4000);
+	function galleryPlay(){
+		galleryIndex++;
+		if( galleryIndex == 3 ){
+			galleryIndex = 0;
+		}
+		$(".gallery-viewport-item").eq(galleryIndex).animate({"opacity":1},2000).siblings().animate({"opacity":0},2000);
+		$(".ui-controls>li").eq(galleryIndex).css("background","rgb(85, 85, 85)").siblings().css("background","rgb(189, 189, 189)");
+	}
+	$(".ui-controls>li").click(function(){
+		clearInterval(galleryTimer);
+		$(this).css("background","rgb(85, 85, 85)").siblings().css("background","rgb(189, 189, 189)");
+		galleryIndex = $(this).index()-1;
+		galleryPlay();
+	})
 	
+	//section-version  按钮点击
+	$(".tab").click(function(){
+		$(this).addClass("current").parent().parent().parent().find(".tab:not(.tab-"+ $(this).data("ver") +")").removeClass("current");
+		$(".pic-"+ $(this).data("ver") ).animate({"opacity":1},500).siblings().animate({"opacity":0},500);
+	})
+	
+	//立即购买吸顶
+	var flag = true;
+	$(window).scroll(function(){
+		var sTop = $(document).scrollTop();
+		if( flag && sTop > 200 ){
+			flag = false;
+			$("#J-proHeader").css({"position":"fixed","top":-60}).animate({"top":0},500);
+		}
+		if( sTop < 200 ){
+			$("#J-proHeader").css({"position":"",});
+			flag = true;
+		}
+	})
+	
+	window.onload = function(){
+		$("body,html").animate({"scrollTop":140},1000);
+	}
 	
 	
 })

@@ -43,6 +43,7 @@ requirejs(["jquery","pb"],function($,pb){
 	$(".btn_reg_1").click(function(){
 		if(flagPwd && flagQpwd){
 			var data = JSON.parse( pb.getCookie("userlist") );
+			console.log(pb.getCookie("userlist"));
 			var json = {
 				"userphone" : data["userphone"],
 				"userpwd" : $("#password").val()

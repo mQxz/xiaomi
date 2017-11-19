@@ -88,7 +88,7 @@ requirejs(["jquery","pb"],function($,pb){
 		var str = "";
     	for( var i = 0 ; i < json[$(".starpro-radio").data("type")].list.length ; i++ ){
     		var product = json[$(".starpro-radio").data("type")].list[i];
-    		str += `<li class="starpro-radio-item1">
+    		str += `<li class="starpro-radio-item1" data-id="${product.id}">
 						<a href="javascript:;"><img src="img/index/starpro/${product.src}"/></a>
 						<h3 class="radio-item-name"><a href="javascript:;">${product.name}</a></h3>
 						<p class="radio-item-intro">${product.desc}</p>
@@ -146,7 +146,7 @@ requirejs(["jquery","pb"],function($,pb){
 	    	for( var i = 0 ; i < json[obj.data("type")].list.length ; i++ ){
 	    		var product = json[obj.data("type")].list[i];
 				if(i == 7){
-					str += `<li class="brick brick-s shadow">
+					str += `<li class="brick brick-s shadow" data-id="${product.id}">
 								<a class="brick-s-img" href="javascript:;">
 									<img src="img/index/floorsele/${json[obj.data("type")].name}/${product.src}" alt="" />
 								</a>
@@ -154,7 +154,7 @@ requirejs(["jquery","pb"],function($,pb){
 								<p class="price">${product.price}元</p>
 							</li>`;
 	    		}else{
-					str += `<li class="brick shadow">
+					str += `<li class="brick shadow" data-id="${product.id}">
 								<a class="floor-con-img" href="javascript:;"><img src="img/index/floorsele/${json[obj.data("type")].name}/${product.src}" alt=""/></a>
 								<h3 class="floor-con-title"><a href="javascript:;">${product.name}</a></h3>
 								<p class="desc">${product.desc}</p>
