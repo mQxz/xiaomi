@@ -222,3 +222,53 @@
 .info-links a{float:left;margin-left:3px;}
 .info-links a img{width:83px;height:28px;}
 .slogan{width:267px;height:19px;margin:85px auto 0;color:#b0b0b0;font-size:18px;}
+/*楼梯*/
+#LoutiNav{
+	position: fixed;
+	top: 25%;
+	left: 0;
+	width:25px;
+	border: 1px dashed #ccc;
+	color:#757575;
+	display: none;
+}
+#LoutiNav ul li{
+	position:relative;
+	width:25px;
+	height:30px;
+	list-style:none;
+	text-align:center;
+	line-height: 30px;
+	font-size: 12px;
+	cursor: pointer;
+	border-bottom: 1px dotted #AAAAAA;
+}
+#LoutiNav ul li.last {
+	background: #FF6700;
+	color: white;
+	border-bottom: none;
+}
+#LoutiNav ul li span{
+	display: none;
+	width:25px;
+	height: 30px;
+	position: absolute;	
+	top: 0;
+	left: 0;
+	color:#FF6700;
+}
+#LoutiNav ul li:hover span{
+	display: block;
+	background: #FF6700;
+	color: white;
+}
+#LoutiNav ul li span.active {
+	display: block;
+	background: white;
+	color: #FF6700;
+}
+#LoutiNav ul li:hover span.active{
+	display: block;
+	background: #FF6700;
+	color: white;
+}
