@@ -21,16 +21,16 @@ requirejs(["jquery","pb"],function($,pb){
 	
 	//图片轮播
 	var imgIndex = 0;
-	var viewTimer = setInterval(viewPlay , 4000);
+	var viewTimer = setInterval(viewPlay , 5000);
 	function viewPlay(){
 		imgIndex++;
 		if(imgIndex == 3){
 			imgIndex = 0;
 		}
 		$(".slider").css("opacity",0);
-		$(".slider").eq(imgIndex).animate({"opacity":1},500);
-		$(".bigimg").eq( imgIndex ).animate({"opacity":1},500).siblings().animate({"opacity":0},500);
-		$(".maskimg").eq( imgIndex ).animate({"opacity":1},500).siblings().animate({"opacity":0},500);
+		$(".slider").eq(imgIndex).animate({"opacity":1},1000);
+		$(".bigimg").eq( imgIndex ).animate({"opacity":1},1000).siblings().animate({"opacity":0},1000);
+		$(".maskimg").eq( imgIndex ).animate({"opacity":1},1000).siblings().animate({"opacity":0},1000);
 		$(".ui-pager-item").eq(imgIndex).find("a").addClass("active").end().siblings().find("a").removeClass("active");
 	}
 	$(".ui-pager-item").click(function(){
@@ -88,19 +88,15 @@ requirejs(["jquery","pb"],function($,pb){
 	
 	
 	//版本选择
-	$(".pro-choose .step-list li").click(function(){
+	$(".pro-choose .step-list").on("click","li:not(#color-btn)",function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		if( $(".list-choose-small li").attr("class") ){
 			var totalP = parseFloat($(this).data("price"))  + 249;
 		}else{
 			var totalP = parseFloat($(this).data("price"));
 		}
-		var str = `<li>小米MIX 2 全网通版 ${$(this).data("name").split("+")[0]}内存${$(this).data("name").split("+")[1]} 黑色陶瓷  <span>${$(this).data("price")}</span> </li>        
+		var str = `<li> ${$(this).data("name")}   ${$(this).data("value")} ${$(this).data("color")}  <span>${$(this).data("price")}元</span> </li>        
 					<li class="totlePrice" data-price="${parseFloat($(this).data("price"))}">  总计  ：${totalP}元</li>`;
-		if( $(this).index() == 3 ){
-			str = `<li>小米MIX 2 全网通版 ${$(this).data("name").split("+")[0]} 黑色陶瓷  <span>${$(this).data("price")}</span> </li>        
-					<li class="totlePrice" data-price="${parseFloat($(this).data("price"))}">  总计  ：${totalP}元</li>`;
-		}
 		$("#J_proList>ul").html( str );
 	})
 	var baoxianFlag = null;
@@ -145,13 +141,65 @@ requirejs(["jquery","pb"],function($,pb){
 	})
 	
 	
-	pb.ajax("http://127.0.0.1/xiaomi/mi_project/json/prodetails.json?hh="+Math.random(),function(res){
-		for(var i = 0 ; i<res.length ; i++){
-			if( res[i].id == fshop100 ){
-				console.log(res[i]);
+	//页面数据加载
+	var hrefstr = location.href;
+	var proid = hrefstr.split("?")[1].split("=")[1];
+	pb.ajax("http://127.0.0.1/xiaomi/mi_project/json/prodetails.json?aa="+Math.random(),function(res){
+		for(var i = 0 ; i < res.length ; i++){
+			var proinfo = res[i];
+			if( proinfo.id == proid ){
+				//图片加载
+				var simgstr = `<img class="slider done" src="img/prodetails/${proinfo.src.split("+")[0]}" style="z-index: 1;">
+								<img class="slider done" src="img/prodetails/${proinfo.src.split("+")[1]}" >
+								<img class="slider done" src="img/prodetails/${proinfo.src.split("+")[2]}" >`;
+				$("#J_sliderView").prepend( simgstr );
+				var mimgstr = `<img class="maskimg done" src="img/prodetails/${proinfo.src.split("+")[0]}" style="z-index: 1;">
+								<img class="maskimg done" src="img/prodetails/${proinfo.src.split("+")[1]}" >
+								<img class="maskimg done" src="img/prodetails/${proinfo.src.split("+")[2]}" >`
+				$(".mask").prepend( mimgstr );
+				var bimgstr = `<img class="bigimg" src="img/prodetails/${proinfo.bigsrc.split("+")[0]}" alt="" style="z-index: 1;"/>
+								<img class="bigimg"src="img/prodetails/${proinfo.bigsrc.split("+")[1]}" alt="" />
+								<img class="bigimg"src="img/prodetails/${proinfo.bigsrc.split("+")[2]}" alt=""/>`;
+				$(".big").prepend( bimgstr );
+				//信息加载
+				$("#pro-title").html( proinfo.name );
+				$("#J_desc").html( proinfo.desc );
+				$("#pro-price").html( proinfo.price + "元" );
+				var protype = proinfo.type.split("/");
+				var typestr = "";
+				var liststr = "";
+				for( var j = 0 ; j < protype.length ; j++ ){
+					typestr += `<li class="btn btn-biglarge" data-color="${proinfo.color}" data-name="${proinfo.name}" data-price="${protype[j].split("*")[1]}" data-index="${j}" data-value="${protype[j].split("*")[0]}"> 
+			        				<a href="javascript:void(0);"> 
+			        					<span class="name">${protype[j].split("*")[0]} </span>  
+			        					<span class="price"> ${protype[j].split("*")[1]} </span>  
+			        				</a> 
+			        			</li>`;
+				}
+				$("#pro-type").html( typestr );
+				$("#pro-color").append( proinfo.color );
+				liststr = `<li>${proinfo.name} ${protype[0].split("*")[0]}   ${proinfo.color} <span>  ${proinfo.price}元</span> </li>        
+				        	<li class="totlePrice" data-price="${proinfo.price}" >  总计  ：${proinfo.price}元  </li>`
+				$("#J_proList>ul").html( liststr );
 			}
 		}
 	})
 	
+	
+	//用户名显示
+	var hrefstr = location.href;
+	var str = hrefstr.split("?")[1].split("&")[0].split("=")[0];
+	var userid = hrefstr.split("?")[1].split("&")[0].split("=")[1]
+	if( str == "userId" ){
+		$(".name").html( userid );
+		$(".login-res").css("display","none");
+		$(".link-order").css("display","inline-block");
+		$(".user").css("display","inline-block");
+	}
+	$(".user").mouseenter(function(){
+		$(this).find(".sep").css("display","none").end().find(".user-menu").css("display","block");
+	}).mouseleave(function(){
+		$(this).find(".sep").css("display","inline").end().find(".user-menu").css("display","none");
+	})
 	
 })

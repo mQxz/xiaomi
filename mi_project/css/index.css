@@ -44,7 +44,7 @@
 .header-nav>li .item-lists li .price{font-size:12px;line-height:12px;color:#FF6700;}
 .header-search{float:right;height:75px;width:297px;padding-top:25px;position:relative;}
 .header-search .txt{float:left;height:50px;width:245px;border:1px solid #e0e0e0;}
-.header-search .btn{float:left;height:50px;width:51px;border:1px solid #e0e0e0;border-left:0;background:#fff;}
+.header-search .btn{float:left;height:50px;width:51px;border:1px solid #e0e0e0;border-left:0;background:url(../img/index/search_03.jpg) no-repeat center;}
 .search-hint{position:absolute;width:170px;height:18px;top:40px;left:63px;}
 .search-hint a{display:block;color:#757575;font-size:12px;text-align:center;padding:0 5px;background:#eee;height:18px;}
 .search-hint a:hover{background:#ff6700;color:#fff;}

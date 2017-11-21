@@ -426,6 +426,10 @@
 	background: #fff;
 	display: none;
 }
+.big img{
+	width:1120px;
+	height:1120px;
+}
 .big .bigimg{
 	position: absolute;
 	top:0;

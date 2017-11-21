@@ -19,20 +19,20 @@
 						<div class="ui-wrapper" style="max-width: 100%;">
 							<div class="ui-viewport" style="width: 100%;position: relative; height: 560px;">
 								<div id="J_sliderView" class="sliderWrap" style="width: auto; position: relative;">
-									<img class="slider done" src="img/prodetails/pms_1505401551.09912910!560x560.jpg" style="z-index: 1;">
+									<!--<img class="slider done" src="img/prodetails/pms_1505401551.09912910!560x560.jpg" style="z-index: 1;">
 									<img class="slider done" src="img/prodetails/pms_1505098761.26126570!560x560.jpg" >
-									<img class="slider done" src="img/prodetails/pms_1505098777.56193375!560x560.jpg" >
+									<img class="slider done" src="img/prodetails/pms_1505098777.56193375!560x560.jpg" >-->
 									<div class="cenmask"></div>
 									<div class="mask">
-										<img class="maskimg done" src="img/prodetails/pms_1505401551.09912910!560x560.jpg" style="z-index: 1;">
+										<!--<img class="maskimg done" src="img/prodetails/pms_1505401551.09912910!560x560.jpg" style="z-index: 1;">
 										<img class="maskimg done" src="img/prodetails/pms_1505098761.26126570!560x560.jpg" >
-										<img class="maskimg done" src="img/prodetails/pms_1505098777.56193375!560x560.jpg" >
+										<img class="maskimg done" src="img/prodetails/pms_1505098777.56193375!560x560.jpg" >-->
 									</div>
 								</div>
 								<div class="big">
-									<img class="bigimg" src="img/prodetails/pms_1505401551.09912910!560x560_big.jpg" alt="" style="z-index: 1;"/>
+									<!--<img class="bigimg" src="img/prodetails/pms_1505401551.09912910!560x560_big.jpg" alt="" style="z-index: 1;"/>
 									<img class="bigimg"src="img/prodetails/pms_1505098761.26126570!560x560_big.jpg" alt="" />
-									<img class="bigimg"src="img/prodetails/pms_1505098777.56193375!560x560_big.jpg" alt=""/>
+									<img class="bigimg"src="img/prodetails/pms_1505098777.56193375!560x560_big.jpg" alt=""/>-->
 								</div>
 							</div>
 							<div class="ui-controls ui-has-pager ui-has-controls-direction">
@@ -56,13 +56,13 @@
 					</div>
 				</div>
 				<div class="pro-info span10">
-				    <h1 class="pro-title J_proName">小米MIX 2  全面屏2.0</h1>
+				    <h1 class="pro-title J_proName" id="pro-title"><!--小米MIX 2  全面屏2.0--></h1>
 				    <!-- 提示 -->
 				    <p class="sale-desc" id="J_desc">
-				    	<font color="#ff4a00">【64GB赠感应灯、送米粉卡，最高可享12期免息。128GB现货在售。】</font>
-				    	全面屏2.0，5.99"大屏 / 骁龙835旗舰处理器 / 4轴光学防抖 / 6模43频，全球频段 / 双ADC高清录音
+				    	<!--<font color="#ff4a00">【64GB赠感应灯、送米粉卡，最高可享12期免息。128GB现货在售。】</font>
+				    	全面屏2.0，5.99"大屏 / 骁龙835旗舰处理器 / 4轴光学防抖 / 6模43频，全球频段 / 双ADC高清录音-->
 				    </p>
-				    <span class="pro-price J_proPrice">3299元 </span>
+				    <span class="pro-price J_proPrice" id="pro-price"><!--3299元--> </span>
 				    <!-- 主体 -->
 				    <div class="J_main">
 				        <!-- 分仓地址 -->
@@ -94,8 +94,8 @@
 				        <div class="list-wrap" id="J_list">   
 				        	<div class="pro-choose pro-choose-col2 J_step" data-index="0"> 
 				        		<div class="step-title" data-name="选择版本"> 选择版本  </div> 
-				        		<ul class="step-list step-one clearfix">   
-				        			<li class="btn btn-biglarge active" data-name="6GB+64GB" data-price="3299元  " data-index="0" data-value="6GB+64GB"> 
+				        		<ul class="step-list step-one clearfix" id="pro-type">   
+				        			<!--<li class="btn btn-biglarge active" data-name="6GB+64GB" data-price="3299元  " data-index="0" data-value="6GB+64GB"> 
 				        				<a href="javascript:void(0);"> 
 				        					<span class="name">6GB+64GB </span>  
 				        					<span class="price"> 3299元 </span>  
@@ -112,7 +112,7 @@
 				        					<span class="name">6GB+256GB </span>  
 				        					<span class="price"> 3999元 </span>  
 				        				</a> 
-				    				</li>      
+				    				</li>-->      
 				    				<!--<li class="btn btn-biglarge" data-name="全陶瓷尊享版" data-price="4699元  " data-index="3" data-value="全陶瓷尊享版"> 
 				    					<a href="javascript:void(0);"> 
 				    						<span class="name">全陶瓷尊享版 </span>  
@@ -124,10 +124,10 @@
 				        	<div class="pro-choose pro-choose-col2 J_step" data-index="1"> 
 				        		<div class="step-title" data-name="选择颜色"> 选择颜色  </div> 
 				        		<ul class="step-list clearfix">    
-				        			<li class="btn btn-biglarge active" data-id="2173500019" data-cid="1173500015" data-name="小米MIX 2 全网通版 6GB内存 64GB 黑色陶瓷" data-price="3299元" data-value="黑色陶瓷" data-index="0">  
-				        				<a href="javascript:void(0);">   
+				        			<li class="btn btn-biglarge active" id="color-btn">  
+				        				<a href="javascript:void(0);" id="pro-color">   
 				        					<img src="img/prodetails/bc99af80103f531296be0be09811bd7f.png" data-src="" alt="黑色陶瓷" class="done">   
-				        					黑色陶瓷 
+				        					<!--黑色陶瓷--> 
 				        				</a> 
 				        			</li>       
 				        			<!--<li class="btn btn-biglarge disabled btn-hide" data-value="皓月白"> 
@@ -159,14 +159,16 @@
 				        <!-- 已选择的产品 -->
 				        <div class="pro-list" id="J_proList">
 				        	<ul>   
-					        	<li>小米MIX 2 全网通版 6GB内存 64GB 黑色陶瓷  <span>  3299元</span> </li>        
-					        	<li class="totlePrice" data-price="3299" >  总计  ：3299元  </li>
+					        	<!--<li>小米MIX 2 全网通版 6GB内存 64GB 黑色陶瓷  <span>  3299元</span> </li>        
+					        	<li class="totlePrice" data-price="3299" >  总计  ：3299元  </li>-->
 				        	</ul>
 				        </div>
 				        <!-- 购买按钮 -->
 				        <ul class="btn-wrap clearfix" id="J_buyBtnBox">       
 				        	<li> 
-				        		<a href="javascript:void(0);" class="btn btn-primary  btn-biglarge J_proBuyBtn" data-type="common" data-isbigtap="false" data-name="加入购物车">加入购物车</a> 
+				        		<a href="javascript:void(0);" class="btn btn-primary  btn-biglarge J_proBuyBtn" data-type="common" data-isbigtap="false" data-name="加入购物车">
+				        			加入购物车
+				        		</a> 
 				        	</li>     
 				        </ul>
 				        <div class="pro-policy" id="J_policy">

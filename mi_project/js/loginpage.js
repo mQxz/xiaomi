@@ -20,17 +20,15 @@ requirejs(["jquery","pb"],function($,pb){
 		$(".login-box-2").css("display","block");
 	})
 	//登录验证
-	$(".login-tab-con").submit(function(){
+	$("#btn").click(function(){
 		var username = $("#username").val();
 		var password = $("#pwd").val();
 		var data = JSON.parse(pb.getCookie("userlist"));
-		var loginHref = "http://127.0.0.1/xiaomi/mi_project/index.html?userId=123456789";
+//		var loginHref = "http://127.0.0.1/xiaomi/mi_project/index.html?userId=123456789";
 		if( (username == data["userphone"] || username == data["userid"]) && password == data["userpwd"]){
-			$(this).attr("action","http://127.0.0.1/xiaomi/mi_project/index.html?userId=123456789");
-			return true;
+			$(location).attr("href","http://127.0.0.1/xiaomi/mi_project/index.html?userId="+data["userid"]);
 		}else{
 			$(".error-info").html( "用户名或密码错误" );
-			return false;
 		}
 	})
 	

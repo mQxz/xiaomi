@@ -1,0 +1,898 @@
+[
+	{
+		"id" : "fshop01",
+		"name" : "小米电视4A 32",
+		"desc" : "64位四核处理器／1GB+4GB大内存",
+		"src" : "320_43.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop02",
+		"name" : "小米电视4A 49英寸 标准版",
+		"desc" : "2GB+8GB 大储存／全高清HDR",
+		"src" : "320_49.png",
+		"price" : "2399"
+	},
+	{
+		"id" : "fshop03",
+		"name" : "小米笔记本Pro 15.6英寸 ",
+		"desc" : "全金属强化机身/FHD全贴合屏幕",
+		"src" : "320-220.jpg",
+		"price" : "5599"
+	},
+	{
+		"id" : "fshop04",
+		"name" : "小米笔记本Air 13.3 i7处理器",
+		"desc" : "Intel酷睿i7处理器，8GB内存+256GB",
+		"src" : "320-220-1.png",
+		"price" : "5999"
+	},
+	{
+		"id" : "fshop05",
+		"name" : "小米净水器（厨上式） 增强版",
+		"desc" : "400 加仑大流量，纯水更多，废水更少",
+		"src" : "3205a.png",
+		"price" : "1499"
+	},
+	{
+		"id" : "fshop06",
+		"name" : "米家恒温电水壶",
+		"desc" : "水温智能控制，304 不锈钢内胆",
+		"src" : "320x220.png",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop07",
+		"name" : "智米全直流变频空调",
+		"desc" : "一级能效，强劲冷暖",
+		"src" : "3G.png",
+		"price" : "4399"
+	},
+	{
+		"id" : "fshop08",
+		"name" : "小白摄像机",
+		"desc" : "小白摄像机",
+		"src" : "5x-2.jpg",
+		"price" : "399"
+	},
+	{
+		"id" : "fshop09",
+		"name" : "小米电视4A 55 标准版",
+		"desc" : "4K高清HDR / 真四核64位高性能处理器航",
+		"src" : "70dianshi.png",
+		"price" : "2999"
+	},
+	{
+		"id" : "fshop10",
+		"name" : "小米电视4 55英寸",
+		"desc" : "4.9mm极超薄机身／4K高清HDR",
+		"src" : "bijiben32012.5.jpg",
+		"price" : "4499"
+	},
+	{
+		"id" : "fshop11",
+		"name" : "小米电视4 49英寸",
+		"desc" : "4.9mm 极超薄机身／无边框式设计",
+		"src" : "dfb.jpg",
+		"price" : "3599"
+	},
+	{
+		"id" : "fshop12",
+		"name" : "小米电视4A 65 标准版",
+		"desc" : "4K超高清屏／真四核64位高性能处理器",
+		"src" : "dianshi465.png",
+		"price" : "5682"
+	},
+	{
+		"id" : "fshop13",
+		"name" : "电视4A 65英寸 人工智能语音版",
+		"desc" : "4K超高清屏 / 四核64位高性能处理器",
+		"src" : "fdq2.jpg",
+		"price" : "8652"
+	},
+	{
+		"id" : "fshop14",
+		"name" : "小米电视4 65英寸",
+		"desc" : "无边框式设计 / 3GB+32GB超大内存",
+		"src" : "hezi3s.jpg",
+		"price" : "4582"
+	},
+	{
+		"id" : "fshop15",
+		"name" : "小米盒子3s",
+		"desc" : "4K HDR 人工智能机顶盒",
+		"src" : "hm4x.jpg",
+		"price" : "4521"
+	},
+	{
+		"id" : "fshop16",
+		"name" : "盒子3 增强版",
+		"desc" : "盒子3 增强版",
+		"src" : "hmn4xtb.jpg",
+		"price" : "2365"
+	},
+	{
+		"id" : "fshop17",
+		"name" : "小米笔记本Air 13.3 i7处理器",
+		"desc" : "Intel酷睿i7处理器，8GB内存+256GB",
+		"src" : "jsqcs-320-220.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop18",
+		"name" : "小米笔记本Air13.3英寸",
+		"desc" : "第7代CPU 2G独显 指纹解锁",
+		"src" : "max2_toubu.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop19",
+		"name" : "小米笔记本Air 13.3英寸",
+		"desc" : "Intel 酷睿i5 处理器 独立显卡",
+		"src" : "mihezi.png",
+		"price" : "699"
+	},
+	{
+		"id" : "fshop20",
+		"name" : "小米笔记本Air 12.5英寸",
+		"desc" : "更轻更薄，像杂志一样随身携带",
+		"src" : "mix2320-220.png",
+		"price" : "1999"
+	},
+	{
+		"id" : "fshop21",
+		"name" : "小米无线鼠标",
+		"desc" : "耐脏亲肤涂层，人体工学设计",
+		"src" : "note2320x220.png",
+		"price" : "3999"
+	},
+	{
+		"id" : "fshop22",
+		"name" : "小米便携鼠标",
+		"desc" : "轻薄便携，铝合金外壳 +ABS 材质",
+		"src" : "sh2-320-220.png",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop23",
+		"name" : "悦米机械键盘",
+		"desc" : "铝合金机身，TTC红轴，87 键",
+		"src" : "WechatIMG603.png",
+		"price" : "149"
+	},
+	{
+		"id" : "fshop24",
+		"name" : "多功能转接器",
+		"desc" : "多功能转接器术",
+		"src" : "xm6-320.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop25",
+		"name" : "米家恒温电水壶",
+		"desc" : "水温智能控制，304 不锈钢内胆",
+		"src" : "xmds_55.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop26",
+		"name" : "米家声波电动牙刷",
+		"desc" : "磁悬浮声波马达，定制多种刷牙模式",
+		"src" : "xmlyq3.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop27",
+		"name" : "米家 LED 智能台灯",
+		"desc" : "无可视频闪，四种场景优化调光",
+		"src" : "pms_1465366178.11466342!560x560.jpg",
+		"price" : "699"
+	},
+	{
+		"id" : "fshop28",
+		"name" : "米家扫地机器人",
+		"desc" : "智能路径规划，扫得干净扫得快",
+		"src" : "pms_1499151031.88987885!560x560.jpg",
+		"price" : "1999"
+	},
+	{
+		"id" : "fshop29",
+		"name" : "小米空气净化器2",
+		"desc" : "10分钟，房间空气焕然一新",
+		"src" : "pms_1505897594.08222545!560x560.jpg",
+		"price" : "3999"
+	},
+	{
+		"id" : "fshop30",
+		"name" : "米家压力IH电饭煲",
+		"desc" : "智能烹饪，灰铸铁粉体涂层内胆",
+		"src" : "pms_1500287084.72131750!560x560.jpg",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop31",
+		"name" : "飞利浦智睿球泡灯",
+		"desc" : "自由调节亮度，Wi-Fi随时操控",
+		"src" : "pms_1500287086.08626879!560x560.jpg",
+		"price" : "149"
+	},
+	{
+		"id" : "fshop32",
+		"name" : "Yeelight LED 吸顶灯",
+		"desc" : "Yeelight LED 吸顶灯",
+		"src" : "pms_1500287087.73618884!560x560.jpg",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop01",
+		"name" : "小米电视4A 32",
+		"desc" : "64位四核处理器／1GB+4GB大内存",
+		"src" : "pms_1503909218.45955161!560x560.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop02",
+		"name" : "小米电视4A 49英寸 标准版",
+		"desc" : "2GB+8GB 大储存／全高清HDR",
+		"src" : "pms_1503909218.70932288!560x560.png",
+		"price" : "2399"
+	},
+	{
+		"id" : "fshop03",
+		"name" : "小米笔记本Pro 15.6英寸 ",
+		"desc" : "全金属强化机身/FHD全贴合屏幕",
+		"src" : "pms_1497801904.62363771!560x560.jpg",
+		"price" : "5599"
+	},
+	{
+		"id" : "fshop04",
+		"name" : "小米笔记本Air 13.3 i7处理器",
+		"desc" : "Intel酷睿i7处理器，8GB内存+256GB",
+		"src" : "320-220-1.png",
+		"price" : "5999"
+	},
+	{
+		"id" : "fshop05",
+		"name" : "小米净水器（厨上式） 增强版",
+		"desc" : "400 加仑大流量，纯水更多，废水更少",
+		"src" : "3205a.png",
+		"price" : "1499"
+	},
+	{
+		"id" : "fshop06",
+		"name" : "米家恒温电水壶",
+		"desc" : "水温智能控制，304 不锈钢内胆",
+		"src" : "320x220.png",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop07",
+		"name" : "智米全直流变频空调",
+		"desc" : "一级能效，强劲冷暖",
+		"src" : "3G.png",
+		"price" : "4399"
+	},
+	{
+		"id" : "fshop08",
+		"name" : "小白摄像机",
+		"desc" : "小白摄像机",
+		"src" : "5x-2.jpg",
+		"price" : "399"
+	},
+	{
+		"id" : "fshop09",
+		"name" : "小米电视4A 55 标准版",
+		"desc" : "4K高清HDR / 真四核64位高性能处理器航",
+		"src" : "70dianshi.png",
+		"price" : "2999"
+	},
+	{
+		"id" : "fshop10",
+		"name" : "小米电视4 55英寸",
+		"desc" : "4.9mm极超薄机身／4K高清HDR",
+		"src" : "bijiben32012.5.jpg",
+		"price" : "4499"
+	},
+	{
+		"id" : "fshop11",
+		"name" : "小米电视4 49英寸",
+		"desc" : "4.9mm 极超薄机身／无边框式设计",
+		"src" : "dfb.jpg",
+		"price" : "3599"
+	},
+	{
+		"id" : "fshop12",
+		"name" : "小米电视4A 65 标准版",
+		"desc" : "4K超高清屏／真四核64位高性能处理器",
+		"src" : "dianshi465.png",
+		"price" : "5682"
+	},
+	{
+		"id" : "fshop13",
+		"name" : "电视4A 65英寸 人工智能语音版",
+		"desc" : "4K超高清屏 / 四核64位高性能处理器",
+		"src" : "fdq2.jpg",
+		"price" : "8652"
+	},
+	{
+		"id" : "fshop14",
+		"name" : "小米电视4 65英寸",
+		"desc" : "无边框式设计 / 3GB+32GB超大内存",
+		"src" : "hezi3s.jpg",
+		"price" : "4582"
+	},
+	{
+		"id" : "fshop15",
+		"name" : "小米盒子3s",
+		"desc" : "4K HDR 人工智能机顶盒",
+		"src" : "hm4x.jpg",
+		"price" : "4521"
+	},
+	{
+		"id" : "fshop16",
+		"name" : "盒子3 增强版",
+		"desc" : "盒子3 增强版",
+		"src" : "hmn4xtb.jpg",
+		"price" : "2365"
+	},
+	{
+		"id" : "fshop17",
+		"name" : "小米笔记本Air 13.3 i7处理器",
+		"desc" : "Intel酷睿i7处理器，8GB内存+256GB",
+		"src" : "jsqcs-320-220.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop18",
+		"name" : "小米笔记本Air13.3英寸",
+		"desc" : "第7代CPU 2G独显 指纹解锁",
+		"src" : "max2_toubu.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop19",
+		"name" : "小米笔记本Air 13.3英寸",
+		"desc" : "Intel 酷睿i5 处理器 独立显卡",
+		"src" : "mihezi.png",
+		"price" : "699"
+	},
+	{
+		"id" : "fshop20",
+		"name" : "小米笔记本Air 12.5英寸",
+		"desc" : "更轻更薄，像杂志一样随身携带",
+		"src" : "mix2320-220.png",
+		"price" : "1999"
+	},
+	{
+		"id" : "fshop21",
+		"name" : "小米无线鼠标",
+		"desc" : "耐脏亲肤涂层，人体工学设计",
+		"src" : "note2320x220.png",
+		"price" : "3999"
+	},
+	{
+		"id" : "fshop22",
+		"name" : "小米便携鼠标",
+		"desc" : "轻薄便携，铝合金外壳 +ABS 材质",
+		"src" : "sh2-320-220.png",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop23",
+		"name" : "悦米机械键盘",
+		"desc" : "铝合金机身，TTC红轴，87 键",
+		"src" : "WechatIMG603.png",
+		"price" : "149"
+	},
+	{
+		"id" : "fshop24",
+		"name" : "多功能转接器",
+		"desc" : "多功能转接器术",
+		"src" : "xm6-320.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop25",
+		"name" : "米家恒温电水壶",
+		"desc" : "水温智能控制，304 不锈钢内胆",
+		"src" : "xmds_55.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop26",
+		"name" : "米家声波电动牙刷",
+		"desc" : "磁悬浮声波马达，定制多种刷牙模式",
+		"src" : "xmlyq3.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop27",
+		"name" : "米家 LED 智能台灯",
+		"desc" : "无可视频闪，四种场景优化调光",
+		"src" : "pms_1465366178.11466342!560x560.jpg",
+		"price" : "699"
+	},
+	{
+		"id" : "fshop28",
+		"name" : "米家扫地机器人",
+		"desc" : "智能路径规划，扫得干净扫得快",
+		"src" : "pms_1499151031.88987885!560x560.jpg",
+		"price" : "1999"
+	},
+	{
+		"id" : "fshop29",
+		"name" : "小米空气净化器2",
+		"desc" : "10分钟，房间空气焕然一新",
+		"src" : "pms_1505897594.08222545!560x560.jpg",
+		"price" : "3999"
+	},
+	{
+		"id" : "fshop30",
+		"name" : "米家压力IH电饭煲",
+		"desc" : "智能烹饪，灰铸铁粉体涂层内胆",
+		"src" : "pms_1500287084.72131750!560x560.jpg",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop31",
+		"name" : "飞利浦智睿球泡灯",
+		"desc" : "自由调节亮度，Wi-Fi随时操控",
+		"src" : "pms_1500287086.08626879!560x560.jpg",
+		"price" : "149"
+	},
+	{
+		"id" : "fshop32",
+		"name" : "Yeelight LED 吸顶灯",
+		"desc" : "Yeelight LED 吸顶灯",
+		"src" : "pms_1500287087.73618884!560x560.jpg",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop01",
+		"name" : "小米电视4A 32",
+		"desc" : "64位四核处理器／1GB+4GB大内存",
+		"src" : "320_43.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop02",
+		"name" : "小米电视4A 49英寸 标准版",
+		"desc" : "2GB+8GB 大储存／全高清HDR",
+		"src" : "320_49.png",
+		"price" : "2399"
+	},
+	{
+		"id" : "fshop03",
+		"name" : "小米笔记本Pro 15.6英寸 ",
+		"desc" : "全金属强化机身/FHD全贴合屏幕",
+		"src" : "320-220.jpg",
+		"price" : "5599"
+	},
+	{
+		"id" : "fshop04",
+		"name" : "小米笔记本Air 13.3 i7处理器",
+		"desc" : "Intel酷睿i7处理器，8GB内存+256GB",
+		"src" : "320-220-1.png",
+		"price" : "5999"
+	},
+	{
+		"id" : "fshop05",
+		"name" : "小米净水器（厨上式） 增强版",
+		"desc" : "400 加仑大流量，纯水更多，废水更少",
+		"src" : "3205a.png",
+		"price" : "1499"
+	},
+	{
+		"id" : "fshop06",
+		"name" : "米家恒温电水壶",
+		"desc" : "水温智能控制，304 不锈钢内胆",
+		"src" : "320x220.png",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop07",
+		"name" : "智米全直流变频空调",
+		"desc" : "一级能效，强劲冷暖",
+		"src" : "3G.png",
+		"price" : "4399"
+	},
+	{
+		"id" : "fshop08",
+		"name" : "小白摄像机",
+		"desc" : "小白摄像机",
+		"src" : "5x-2.jpg",
+		"price" : "399"
+	},
+	{
+		"id" : "fshop09",
+		"name" : "小米电视4A 55 标准版",
+		"desc" : "4K高清HDR / 真四核64位高性能处理器航",
+		"src" : "70dianshi.png",
+		"price" : "2999"
+	},
+	{
+		"id" : "fshop10",
+		"name" : "小米电视4 55英寸",
+		"desc" : "4.9mm极超薄机身／4K高清HDR",
+		"src" : "bijiben32012.5.jpg",
+		"price" : "4499"
+	},
+	{
+		"id" : "fshop11",
+		"name" : "小米电视4 49英寸",
+		"desc" : "4.9mm 极超薄机身／无边框式设计",
+		"src" : "dfb.jpg",
+		"price" : "3599"
+	},
+	{
+		"id" : "fshop12",
+		"name" : "小米电视4A 65 标准版",
+		"desc" : "4K超高清屏／真四核64位高性能处理器",
+		"src" : "dianshi465.png",
+		"price" : "5682"
+	},
+	{
+		"id" : "fshop13",
+		"name" : "电视4A 65英寸 人工智能语音版",
+		"desc" : "4K超高清屏 / 四核64位高性能处理器",
+		"src" : "fdq2.jpg",
+		"price" : "8652"
+	},
+	{
+		"id" : "fshop14",
+		"name" : "小米电视4 65英寸",
+		"desc" : "无边框式设计 / 3GB+32GB超大内存",
+		"src" : "hezi3s.jpg",
+		"price" : "4582"
+	},
+	{
+		"id" : "fshop15",
+		"name" : "小米盒子3s",
+		"desc" : "4K HDR 人工智能机顶盒",
+		"src" : "hm4x.jpg",
+		"price" : "4521"
+	},
+	{
+		"id" : "fshop16",
+		"name" : "盒子3 增强版",
+		"desc" : "盒子3 增强版",
+		"src" : "hmn4xtb.jpg",
+		"price" : "2365"
+	},
+	{
+		"id" : "fshop17",
+		"name" : "小米笔记本Air 13.3 i7处理器",
+		"desc" : "Intel酷睿i7处理器，8GB内存+256GB",
+		"src" : "jsqcs-320-220.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop18",
+		"name" : "小米笔记本Air13.3英寸",
+		"desc" : "第7代CPU 2G独显 指纹解锁",
+		"src" : "max2_toubu.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop19",
+		"name" : "小米笔记本Air 13.3英寸",
+		"desc" : "Intel 酷睿i5 处理器 独立显卡",
+		"src" : "mihezi.png",
+		"price" : "699"
+	},
+	{
+		"id" : "fshop20",
+		"name" : "小米笔记本Air 12.5英寸",
+		"desc" : "更轻更薄，像杂志一样随身携带",
+		"src" : "mix2320-220.png",
+		"price" : "1999"
+	},
+	{
+		"id" : "fshop21",
+		"name" : "小米无线鼠标",
+		"desc" : "耐脏亲肤涂层，人体工学设计",
+		"src" : "note2320x220.png",
+		"price" : "3999"
+	},
+	{
+		"id" : "fshop22",
+		"name" : "小米便携鼠标",
+		"desc" : "轻薄便携，铝合金外壳 +ABS 材质",
+		"src" : "sh2-320-220.png",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop23",
+		"name" : "悦米机械键盘",
+		"desc" : "铝合金机身，TTC红轴，87 键",
+		"src" : "WechatIMG603.png",
+		"price" : "149"
+	},
+	{
+		"id" : "fshop24",
+		"name" : "多功能转接器",
+		"desc" : "多功能转接器术",
+		"src" : "xm6-320.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop25",
+		"name" : "米家恒温电水壶",
+		"desc" : "水温智能控制，304 不锈钢内胆",
+		"src" : "xmds_55.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop26",
+		"name" : "米家声波电动牙刷",
+		"desc" : "磁悬浮声波马达，定制多种刷牙模式",
+		"src" : "xmlyq3.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop27",
+		"name" : "米家 LED 智能台灯",
+		"desc" : "无可视频闪，四种场景优化调光",
+		"src" : "pms_1465366178.11466342!560x560.jpg",
+		"price" : "699"
+	},
+	{
+		"id" : "fshop28",
+		"name" : "米家扫地机器人",
+		"desc" : "智能路径规划，扫得干净扫得快",
+		"src" : "pms_1499151031.88987885!560x560.jpg",
+		"price" : "1999"
+	},
+	{
+		"id" : "fshop29",
+		"name" : "小米空气净化器2",
+		"desc" : "10分钟，房间空气焕然一新",
+		"src" : "pms_1505897594.08222545!560x560.jpg",
+		"price" : "3999"
+	},
+	{
+		"id" : "fshop30",
+		"name" : "米家压力IH电饭煲",
+		"desc" : "智能烹饪，灰铸铁粉体涂层内胆",
+		"src" : "pms_1500287084.72131750!560x560.jpg",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop31",
+		"name" : "飞利浦智睿球泡灯",
+		"desc" : "自由调节亮度，Wi-Fi随时操控",
+		"src" : "pms_1500287086.08626879!560x560.jpg",
+		"price" : "149"
+	},
+	{
+		"id" : "fshop32",
+		"name" : "Yeelight LED 吸顶灯",
+		"desc" : "Yeelight LED 吸顶灯",
+		"src" : "pms_1500287087.73618884!560x560.jpg",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop01",
+		"name" : "小米电视4A 32",
+		"desc" : "64位四核处理器／1GB+4GB大内存",
+		"src" : "pms_1503909218.45955161!560x560.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop02",
+		"name" : "小米电视4A 49英寸 标准版",
+		"desc" : "2GB+8GB 大储存／全高清HDR",
+		"src" : "pms_1503909218.70932288!560x560.png",
+		"price" : "2399"
+	},
+	{
+		"id" : "fshop03",
+		"name" : "小米笔记本Pro 15.6英寸 ",
+		"desc" : "全金属强化机身/FHD全贴合屏幕",
+		"src" : "pms_1497801904.62363771!560x560.jpg",
+		"price" : "5599"
+	},
+	{
+		"id" : "fshop04",
+		"name" : "小米笔记本Air 13.3 i7处理器",
+		"desc" : "Intel酷睿i7处理器，8GB内存+256GB",
+		"src" : "320-220-1.png",
+		"price" : "5999"
+	},
+	{
+		"id" : "fshop05",
+		"name" : "小米净水器（厨上式） 增强版",
+		"desc" : "400 加仑大流量，纯水更多，废水更少",
+		"src" : "3205a.png",
+		"price" : "1499"
+	},
+	{
+		"id" : "fshop06",
+		"name" : "米家恒温电水壶",
+		"desc" : "水温智能控制，304 不锈钢内胆",
+		"src" : "320x220.png",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop07",
+		"name" : "智米全直流变频空调",
+		"desc" : "一级能效，强劲冷暖",
+		"src" : "3G.png",
+		"price" : "4399"
+	},
+	{
+		"id" : "fshop08",
+		"name" : "小白摄像机",
+		"desc" : "小白摄像机",
+		"src" : "5x-2.jpg",
+		"price" : "399"
+	},
+	{
+		"id" : "fshop09",
+		"name" : "小米电视4A 55 标准版",
+		"desc" : "4K高清HDR / 真四核64位高性能处理器航",
+		"src" : "70dianshi.png",
+		"price" : "2999"
+	},
+	{
+		"id" : "fshop10",
+		"name" : "小米电视4 55英寸",
+		"desc" : "4.9mm极超薄机身／4K高清HDR",
+		"src" : "bijiben32012.5.jpg",
+		"price" : "4499"
+	},
+	{
+		"id" : "fshop11",
+		"name" : "小米电视4 49英寸",
+		"desc" : "4.9mm 极超薄机身／无边框式设计",
+		"src" : "dfb.jpg",
+		"price" : "3599"
+	},
+	{
+		"id" : "fshop12",
+		"name" : "小米电视4A 65 标准版",
+		"desc" : "4K超高清屏／真四核64位高性能处理器",
+		"src" : "dianshi465.png",
+		"price" : "5682"
+	},
+	{
+		"id" : "fshop13",
+		"name" : "电视4A 65英寸 人工智能语音版",
+		"desc" : "4K超高清屏 / 四核64位高性能处理器",
+		"src" : "fdq2.jpg",
+		"price" : "8652"
+	},
+	{
+		"id" : "fshop14",
+		"name" : "小米电视4 65英寸",
+		"desc" : "无边框式设计 / 3GB+32GB超大内存",
+		"src" : "hezi3s.jpg",
+		"price" : "4582"
+	},
+	{
+		"id" : "fshop15",
+		"name" : "小米盒子3s",
+		"desc" : "4K HDR 人工智能机顶盒",
+		"src" : "hm4x.jpg",
+		"price" : "4521"
+	},
+	{
+		"id" : "fshop16",
+		"name" : "盒子3 增强版",
+		"desc" : "盒子3 增强版",
+		"src" : "hmn4xtb.jpg",
+		"price" : "2365"
+	},
+	{
+		"id" : "fshop17",
+		"name" : "小米笔记本Air 13.3 i7处理器",
+		"desc" : "Intel酷睿i7处理器，8GB内存+256GB",
+		"src" : "jsqcs-320-220.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop18",
+		"name" : "小米笔记本Air13.3英寸",
+		"desc" : "第7代CPU 2G独显 指纹解锁",
+		"src" : "max2_toubu.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop19",
+		"name" : "小米笔记本Air 13.3英寸",
+		"desc" : "Intel 酷睿i5 处理器 独立显卡",
+		"src" : "mihezi.png",
+		"price" : "699"
+	},
+	{
+		"id" : "fshop20",
+		"name" : "小米笔记本Air 12.5英寸",
+		"desc" : "更轻更薄，像杂志一样随身携带",
+		"src" : "mix2320-220.png",
+		"price" : "1999"
+	},
+	{
+		"id" : "fshop21",
+		"name" : "小米无线鼠标",
+		"desc" : "耐脏亲肤涂层，人体工学设计",
+		"src" : "note2320x220.png",
+		"price" : "3999"
+	},
+	{
+		"id" : "fshop22",
+		"name" : "小米便携鼠标",
+		"desc" : "轻薄便携，铝合金外壳 +ABS 材质",
+		"src" : "sh2-320-220.png",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop23",
+		"name" : "悦米机械键盘",
+		"desc" : "铝合金机身，TTC红轴，87 键",
+		"src" : "WechatIMG603.png",
+		"price" : "149"
+	},
+	{
+		"id" : "fshop24",
+		"name" : "多功能转接器",
+		"desc" : "多功能转接器术",
+		"src" : "xm6-320.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop25",
+		"name" : "米家恒温电水壶",
+		"desc" : "水温智能控制，304 不锈钢内胆",
+		"src" : "xmds_55.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop26",
+		"name" : "米家声波电动牙刷",
+		"desc" : "磁悬浮声波马达，定制多种刷牙模式",
+		"src" : "xmlyq3.png",
+		"price" : "999"
+	},
+	{
+		"id" : "fshop27",
+		"name" : "米家 LED 智能台灯",
+		"desc" : "无可视频闪，四种场景优化调光",
+		"src" : "pms_1465366178.11466342!560x560.jpg",
+		"price" : "699"
+	},
+	{
+		"id" : "fshop28",
+		"name" : "米家扫地机器人",
+		"desc" : "智能路径规划，扫得干净扫得快",
+		"src" : "pms_1499151031.88987885!560x560.jpg",
+		"price" : "1999"
+	},
+	{
+		"id" : "fshop29",
+		"name" : "小米空气净化器2",
+		"desc" : "10分钟，房间空气焕然一新",
+		"src" : "pms_1505897594.08222545!560x560.jpg",
+		"price" : "3999"
+	},
+	{
+		"id" : "fshop30",
+		"name" : "米家压力IH电饭煲",
+		"desc" : "智能烹饪，灰铸铁粉体涂层内胆",
+		"src" : "pms_1500287084.72131750!560x560.jpg",
+		"price" : "199"
+	},
+	{
+		"id" : "fshop31",
+		"name" : "飞利浦智睿球泡灯",
+		"desc" : "自由调节亮度，Wi-Fi随时操控",
+		"src" : "pms_1500287086.08626879!560x560.jpg",
+		"price" : "149"
+	},
+	{
+		"id" : "fshop32",
+		"name" : "Yeelight LED 吸顶灯",
+		"desc" : "Yeelight LED 吸顶灯",
+		"src" : "pms_1500287087.73618884!560x560.jpg",
+		"price" : "999"
+	}
+]
