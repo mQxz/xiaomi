@@ -147,16 +147,16 @@ requirejs(["jquery","pb"],function($,pb){
 	    		var product = json[obj.data("type")].list[i];
 				if(i == 7){
 					str += `<li class="brick brick-s shadow" data-id="${product.id}">
-								<a class="brick-s-img" href="http://127.0.0.1/xiaomi/mi_project/prosummary.html?id=${product.id}">
+								<a class="brick-s-img" href="http://127.0.0.1/xiaomi/mi_project/prosummary.html?userId=${userid}&id=${product.id}">
 									<img src="img/index/floorsele/${json[obj.data("type")].name}/${product.src}" alt="" />
 								</a>
-								<h3 class="floor-con-title"><a href="http://127.0.0.1/xiaomi/mi_project/prosummary.html?id=${product.id}">${product.name}</a></h3>
+								<h3 class="floor-con-title"><a href="http://127.0.0.1/xiaomi/mi_project/prosummary.html?userId=${userid}&id=${product.id}">${product.name}</a></h3>
 								<p class="price">${product.price}元</p>
 							</li>`;
 	    		}else{
 					str += `<li class="brick shadow" data-id="${product.id}">
-								<a class="floor-con-img" href="http://127.0.0.1/xiaomi/mi_project/prosummary.html?id=${product.id}"><img src="img/index/floorsele/${json[obj.data("type")].name}/${product.src}" alt=""/></a>
-								<h3 class="floor-con-title"><a href="http://127.0.0.1/xiaomi/mi_project/prosummary.html?id=${product.id}">${product.name}</a></h3>
+								<a class="floor-con-img" href="http://127.0.0.1/xiaomi/mi_project/prosummary.html?userId=${userid}&id=${product.id}"><img src="img/index/floorsele/${json[obj.data("type")].name}/${product.src}" alt=""/></a>
+								<h3 class="floor-con-title"><a href="http://127.0.0.1/xiaomi/mi_project/prosummary.html?userId=${userid}&id=${product.id}">${product.name}</a></h3>
 								<p class="desc">${product.desc}</p>
 								<p class="price">${product.price}元</p>
 								<p class="rank">

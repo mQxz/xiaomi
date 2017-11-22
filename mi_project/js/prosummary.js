@@ -14,8 +14,10 @@ requirejs(["jquery","pb"],function($,pb){
 	
     //用户名显示
 	var hrefstr = location.href;
+	console.log(hrefstr)
 	var str = hrefstr.split("?")[1].split("&")[0].split("=")[0];
 	var userid = hrefstr.split("?")[1].split("&")[0].split("=")[1]
+//	console.log(userid)
 	if( str == "userId" ){
 		$(".name").html( userid );
 		$(".login-res").css("display","none");
@@ -128,9 +130,9 @@ requirejs(["jquery","pb"],function($,pb){
 	
 //	http://127.0.0.1/xiaomi/mi_project/prodetails.html?
 	$(".nav-btn-buy").click(function(){
-		var hrefstr = location.href;
-		var proid = hrefstr.split("?")[1].split("=")[1];
-		$(location).attr("href","http://127.0.0.1/xiaomi/mi_project/prodetails.html?id="+proid);
+		var proid = hrefstr.split("?")[1].split("&")[1].split("=")[1];
+//		console.log("http://127.0.0.1/xiaomi/mi_project/prodetails.html?userId="+userid+"&id="+proid)
+		$(location).attr("href","http://127.0.0.1/xiaomi/mi_project/prodetails.html?userId="+userid+"&id="+proid);
 	})
 	
 })

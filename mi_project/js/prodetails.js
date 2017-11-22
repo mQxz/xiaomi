@@ -6,7 +6,32 @@ requirejs.config({
 })
 
 requirejs(["jquery","pb"],function($,pb){
-	$("#top-common").load("publichtml.html #topbar");
+	var hrefstr = location.href;
+	$("#top-common").load("publichtml.html #topbar",function(){
+		//用户名显示
+		var str = hrefstr.split("?")[1].split("&")[0].split("=")[0];
+		var userid = hrefstr.split("?")[1].split("&")[0].split("=")[1];
+		if( str == "userId" ){
+			$(".name").html( userid );
+			$(".login-res").css("display","none");
+			$(".link-order").css("display","inline-block");
+			$(".user").css("display","inline-block");
+		}
+		//右上角购物车跳转地址
+		$(".cart-mini").attr("href","procart.html?userId="+userid);
+		$(".user").mouseenter(function(){
+			$(this).find(".sep").css("display","none").end().find(".user-menu").css("display","block");
+		}).mouseleave(function(){
+			$(this).find(".sep").css("display","inline").end().find(".user-menu").css("display","none");
+		})
+		
+		
+		//购物车数量显示
+		if( pb.getCookie( "cartlist" ) ){
+			var procart = JSON.parse( pb.getCookie( "cartlist" ) );
+			$(".cart-mini-num").html( `( ${procart.length} )` );
+		}
+	});
 	$("#header-common").load("publichtml.html #header",function(){
 		//headernav 子元素隐藏显示
 	    $(".header-nav>li").mouseover(function(){
@@ -14,10 +39,19 @@ requirejs(["jquery","pb"],function($,pb){
 	    }).mouseout(function(){
 	    	$(this).find(".item-children").css("display","none");
 	    })
+	    
+	    //logo跳转地址
+		$(".logo").click(function(){
+			var userid = hrefstr.split("?")[1].split("&")[0].split("=")[1];
+			location.href = "index.html?userId="+userid;
+		})
+		
 	});
 	$("#proHeader-common").load("publichtml.html #J-proHeader");
 	$("#bottom-common").load("publichtml.html #bottom");
 	$("#footer-common").load("publichtml.html #footer");
+	
+	
 	
 	//图片轮播
 	var imgIndex = 0;
@@ -141,9 +175,10 @@ requirejs(["jquery","pb"],function($,pb){
 	})
 	
 	
+	
+	
 	//页面数据加载
-	var hrefstr = location.href;
-	var proid = hrefstr.split("?")[1].split("=")[1];
+	var proid = hrefstr.split("?")[1].split("&")[1].split("=")[1];
 	pb.ajax("http://127.0.0.1/xiaomi/mi_project/json/prodetails.json?aa="+Math.random(),function(res){
 		for(var i = 0 ; i < res.length ; i++){
 			var proinfo = res[i];
@@ -176,6 +211,7 @@ requirejs(["jquery","pb"],function($,pb){
 			        				</a> 
 			        			</li>`;
 				}
+//				var infospan = `<span id="infospan" style="display:none" data-name="${proinfo.name}+ ${}"><span>`
 				$("#pro-type").html( typestr );
 				$("#pro-color").append( proinfo.color );
 				liststr = `<li>${proinfo.name} ${protype[0].split("*")[0]}   ${proinfo.color} <span>  ${proinfo.price}元</span> </li>        
@@ -186,20 +222,40 @@ requirejs(["jquery","pb"],function($,pb){
 	})
 	
 	
-	//用户名显示
-	var hrefstr = location.href;
-	var str = hrefstr.split("?")[1].split("&")[0].split("=")[0];
-	var userid = hrefstr.split("?")[1].split("&")[0].split("=")[1]
-	if( str == "userId" ){
-		$(".name").html( userid );
-		$(".login-res").css("display","none");
-		$(".link-order").css("display","inline-block");
-		$(".user").css("display","inline-block");
-	}
-	$(".user").mouseenter(function(){
-		$(this).find(".sep").css("display","none").end().find(".user-menu").css("display","block");
-	}).mouseleave(function(){
-		$(this).find(".sep").css("display","inline").end().find(".user-menu").css("display","none");
+	//加入购物车
+	$("#J_buyBtnBox>li").click(function(){
+		if( !$(".step-one").children().is(".active") ){
+			alert( "请选择版本" );
+			return;
+		}
+		var cartArr = [];
+		if( pb.getCookie( "cartlist" ) ){
+			cartArr = JSON.parse( pb.getCookie( "cartlist" ) );
+			console.log( cartArr.length )
+		}
+		var data = {
+			"name" : $("#pro-title").html( ),
+			"src" : $("#J_sliderView").children().eq(0).attr("src"),
+			"price" : $(".step-one>.active").data("price"),
+			"count" : 1
+		}
+		cartArr.push( data );
+		pb.setCookie( "cartlist", cartArr );
+		
+		
+		
+		
+		//购物车数量显示
+		pb.getCookie( "cartlist" )
+		var procart = JSON.parse( pb.getCookie( "cartlist" ) );
+		$(".cart-mini-num").html( `( ${procart.length} )` );
+		alert("已加入购物车\n您可以点击右上角购物产看购物车--或者点击logo会回到首页继续浏览");
+		
 	})
+	
+	
+	
+	
+	
 	
 })
